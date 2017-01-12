@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blackcolor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:stretchColumns="1,2,3"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableRow
+            android:id="@+id/tableName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightblue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Distance(Kms)"
+                android:id="@+id/activeTime"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_column="1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Calories"
+                android:id="@+id/calories"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_column="3"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tablevalues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="---"
+                android:id="@+id/activeDistanceValues"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_column="1"
+                android:layout_marginTop="20sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="---"
+                android:id="@+id/caloriesValues"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_column="3"
+                android:layout_marginTop="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_span="4"
+                android:text="Today&apos;s Count"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/todayCount" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/goldenrod">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_span="4"
+                android:text="---"
+                android:textColor="@color/lightblue"
+                android:textSize="50sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/count" />
+        </TableRow>
+
+        <!--<TableRow-->
+            <!--android:id="@+id/tableRow4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/goldenrod">-->
+
+            <!--<SeekBar-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:max="20"-->
+                <!--android:layout_span="4"-->
+                <!--android:id="@+id/seekBar"-->
+                <!--android:layout_marginTop="20sp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:id="@+id/tableRow5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/goldenrod">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="-&#45;&#45;"-->
+                <!--android:layout_span="4"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:id="@+id/textSensitive"-->
+                <!--android:textSize="20dp"/>-->
+        <!--</TableRow>-->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/goldenrod">
+
+            <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="Reset"
+        android:id="@+id/buttonReset"
+        android:layout_span="4"
+        android:textColor="@color/white"
+        android:background="@color/lightblue"
+        android:onClick="resetSteps"
+        android:layout_marginTop="10sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
